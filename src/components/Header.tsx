@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Download, Share2, Menu, X } from 'lucide-react';
+import { Download, Share2, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -48,8 +48,8 @@ const Header = ({ onSave, onPublish, onShowDashboard }: HeaderProps) => {
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-3">
-              <Sparkles className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-3">
+              <img src="/logo.svg" alt="PageCraft Logo" className="w-full h-full" />
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">

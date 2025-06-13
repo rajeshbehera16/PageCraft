@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Heart, Instagram, Github, Linkedin } from 'lucide-react';
+import { Heart, Instagram, Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,11 +16,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center mb-3 group">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mr-3 shadow-md group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-110">
-                <Sparkles className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 flex items-center justify-center mr-3 shadow-md group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-110">
+                <img src="/logo.svg" alt="PageCraft Logo" className="w-full h-full" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Rajesh's Org
+                PageCraft Technologies
               </span>
             </div>
             <p className="text-gray-600 text-sm max-w-xs text-center md:text-left">
@@ -32,19 +32,19 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-semibold text-gray-800 mb-4 text-lg">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              <a href="https://rajeshbehera.com/privacy" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
+              <a href="https://pagecraft.tech/privacy" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
                 <span className="w-1 h-1 bg-purple-400 rounded-full mr-2"></span>
                 Privacy Policy
               </a>
-              <a href="https://rajeshbehera.com/terms" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
+              <a href="https://pagecraft.tech/terms" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
                 <span className="w-1 h-1 bg-purple-400 rounded-full mr-2"></span>
                 Terms of Service
               </a>
-              <a href="https://rajeshbehera.com/contact" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
+              <a href="https://pagecraft.tech/contact" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
                 <span className="w-1 h-1 bg-purple-400 rounded-full mr-2"></span>
                 Contact Us
               </a>
-              <a href="https://rajeshbehera.com/faq" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
+              <a href="https://pagecraft.tech/faq" className="text-gray-600 hover:text-purple-600 transition-colors hover:translate-x-1 transform duration-200 flex items-center">
                 <span className="w-1 h-1 bg-purple-400 rounded-full mr-2"></span>
                 FAQ
               </a>
@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="font-semibold text-gray-800 mb-4 text-lg">Connect With Us</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/r.aazzz16" 
+                href="https://instagram.com/pagecraft.tech" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Follow us on Instagram"
@@ -65,7 +65,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/rajeshbehera16" 
+                href="https://github.com/pagecraft-technologies" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Follow us on GitHub"
@@ -74,7 +74,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com/in/rajeshbehera16" 
+                href="https://linkedin.com/company/pagecraft-technologies" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Connect with us on LinkedIn"
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
             <div className="mt-4">
               <a 
-                href="https://rajeshbehera.com/newsletter" 
+                href="https://pagecraft.tech/newsletter" 
                 className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Subscribe to Newsletter
@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-6 border-t border-purple-200 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-600 flex items-center mb-4 md:mb-0">
-            © {currentYear} Rajesh's Org. All rights reserved.
+            © {currentYear} PageCraft Technologies. All rights reserved.
             <span className="inline-flex items-center ml-2">
               Made with <Heart className="w-4 h-4 text-red-500 mx-1 animate-pulse" /> in India
             </span>
